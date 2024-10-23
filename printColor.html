@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Background Color Example</title>
+    <style>
+        /* General styles for the page */
+        /* body {
+            font-family: Arial, sans-serif;
+            color: rgb(24, 2, 145);
+            padding: 20px;
+        } */
+
+        /* Styles specific to print */
+        @media print {
+            body {
+                background-color: red !important; /* Background color for printing */
+            }
+
+            /* Optionally, hide elements not needed in print */
+            .no-print {
+                display: none; /* Hide elements with the class 'no-print' */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cls-print">
+    <h1>Welcome to My Web Page</h1>
+    <p>This page will automatically change its background color when printed.</p>
+    <button onclick="window.print()">Print this page</button>
+
+    <div class="no-print">
+        <p>This content will not be printed.</p>
+    </div>
+</div>
+</body>
+</html>
