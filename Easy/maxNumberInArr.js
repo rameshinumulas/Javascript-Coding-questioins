@@ -10,5 +10,5 @@ const maxArray = (arr) => {
     }
     return a;
 }
-let inputArray = [2, 4, 5, 6, 9, 100]
+let inputArray = [2, 234, 5, 6, 9, 100]
 console.log(maxArray(inputArray))

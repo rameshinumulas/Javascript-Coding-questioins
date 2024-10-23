@@ -5,11 +5,20 @@ const getFactorial = (givenNum) => {
     if (givenNum === 0) {
         return 1;
     }
-    console.log(givenNum, 'hello')
+    // console.log(givenNum, 'hello')
     return givenNum * getFactorial(givenNum - 1);
 }
 
+const arrayWay = (givenNum) => {
+    let temp =1;
+    for (let i=0; i <givenNum; i++) {
+        temp = temp * (givenNum - i)
+    }
+    return temp;
+}
+
 // factorial of given number
-const givenNum = 5;
+const givenNum = 100;
 const result = getFactorial(givenNum);
-console.log(result)
+const arrayResult = arrayWay(givenNum);
+console.log(result, 'res', arrayResult)
