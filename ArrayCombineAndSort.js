@@ -1,12 +1,12 @@
 const concateAndSortBothArrays = (list1, list2) => {
-    let combinedArray = [];
+    let combinedArray = [...list1, ...list2];
 
-    for (let i=0; i<list1.length; i++) {
-        combinedArray.push(list1[i]);
-    }
-    for (let j=0; j<list2.length; j++) {
-        combinedArray.push(list2[j])
-    }
+    // for (let i=0; i<list1.length; i++) {
+    //     combinedArray.push(list1[i]);
+    // }
+    // for (let j=0; j<list2.length; j++) {
+    //     combinedArray.push(list2[j])
+    // }
 
     // Implement a simple sorting algorithm (e.g., bubble sort) without using built-in sort
     for (let i=0; i<combinedArray.length - 1; i++) {
